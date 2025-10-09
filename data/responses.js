@@ -1,26 +1,44 @@
-const ironyResponse = [
-  'An old man turned ninety-eight. He won the lottery and died the next day.',
-  'It’s a black fly in your Chardonnay.',
-  'It’s a death row pardon two minutes too late.',
-  'It’s like rain on your wedding day.',
-  'It’s a free ride when you’ve already paid.',
-  'It’s the good advice that you just didn’t take.',
-  'A traffic jam when you’re already late.',
-  'A "No Smoking" sign on your cigarette break.',
-  'It’s like ten thousand spoons when all you need is a knife.',
-  'It’s meeting the man of my dreams and then meeting his beautiful wife.',
+const tingsResponse = [
+  'Manaman’s a wagamama man every day famalam.',
+  'A owl!',
+  'A hour!',
+  'Do you like the films of Jude Law?',
+  'You go tell Dr Dre dat, man will fuck you up innit!',
+  'Oh my giddy giddy gosh!',
+  'Fuck off Nan. Go on, do one',
+  'Nose bone up in your brain and shit',
+  'Welcome to Club Cheddar',
+  'Gentlemens! Welcome to the Elite Selling Crew!',
+  'Cos this shit be patent',
+  'We don’t run on the high street. We run the high street.',
+  'If man say him a ting, then him a ting',
+  'Mans operating on less money than Kerry Katona right now',
+  'Senseless waste',
+  'Grease up ma dry foot with da caw caw butta',
+  'French Connecky Becky',
+  'Do you know why Claire’s Accessories dropped the accessories?',
+  'Very, very naughty gear.',
+  'Look at me! Look at me! DONT LOOK AT ME!',
+  'Apple don’t grapple the Mapple rudeboy',
+  'A fire, a fight or a pregnancy before 10.00pm or your money back.',
+  'Anyone for a White Malcolm?',
+  'Expect the unexpected',
+  'Keep it on the keep it on the keep it on the looooowwwwww',
+  'Mi wan tya-bal, fer tree.',
+  'Chicken and tits fer 3 quid!'
+  'When you buy a 30 grand car for 3 grand there’s gonna be trouble',
 ];
 
 const responses = {
-  ironyResponse,
+  tingsResponse,
 };
 
 function buildResponses() {
   const allResponses = [];
 
-  allResponses.irony = [];
-  responses.ironyResponse.forEach((ironyResp) => {
-    allResponses.irony.push(ironyResp);
+  allResponses.tings = [];
+  responses.tingsResponse.forEach((tingsResp) => {
+    allResponses.tings.push(tingsResp);
   });
 
   // console.dir(allResponses);
@@ -31,3 +49,5 @@ module.exports = function () {
   const responses = buildResponses();
   return responses;
 }
+
+
