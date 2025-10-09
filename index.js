@@ -9,7 +9,7 @@ const PhoneshopBot = new App({
 	socketMode: true,
 });
 
-const IRONY_REGEXP = /(phone|iphone|mobile|handy|shop|contract)/ig;
+const IRONY_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|sutton|croydon|owl|hour|wagamamas)/ig;
 
 const checkForIrony = (text) => {
 	if (text) {
