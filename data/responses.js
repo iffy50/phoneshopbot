@@ -44,6 +44,7 @@ const tingsResponse = [
   'WHAT? I’m a complex man.',
   'NEVER point your fist at a black man, I’m ashamed of you!',
   'Do the moosic.',
+  'We went ice skating once and we had to leave after ten minutes because you had a premonition someone was going to get stabbed during the under-17s free-skate session.',
 ];
 
 const owlResponse = [
