@@ -47,11 +47,16 @@ const ballsResponse = [
   'RAZZ PRINCE AIN’T GOT NO BALLS LEFT!',
 ];
 
+const inAndOfResponse = [
+  'In and of itself?',
+];
+
 const responses = {
   tingsResponse,
   owlResponse,
   hourResponse,
   ballsResponse,
+  inAndOfResponse,
 };
 
 function buildResponses() {
@@ -72,6 +77,10 @@ function buildResponses() {
   allResponses.balls = [];
   responses.ballsResponse.forEach((ballsResp) => {
     allResponses.balls.push(ballsResp);
+  });
+  allResponses.inAndOf = [];
+  responses.inAndOfResponse.forEach((inAndOfResp) => {
+    allResponses.inAndOf.push(inAndOfResp);
   });
 
   // console.dir(allResponses);

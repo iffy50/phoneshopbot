@@ -13,6 +13,7 @@ const TINGS_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerw
 const OWL_REGEXP = /owl/ig;
 const HOUR_REGEXP = /hour/ig;
 const BALLS_REGEXP = /(balls|bollocks|gonads|testicles)/ig;
+const INANDOF_REGEXP = /in and of itself/ig;
 
 const checkForOwl = (text) => {
 	if (text) {
@@ -42,6 +43,13 @@ const checkForBalls = (text) => {
 	return false;
 };
 
+const checkForInAndOf = (text) => {
+	if (text) {
+		return INANDOF_REGEXP.test(text);
+	}
+	return false;
+};
+
 const getResponse = (type) => {
 	const responsesOfType = responses()[type];
 	const pluckResponse = Math.floor(Math.random() * responsesOfType.length);
@@ -57,13 +65,17 @@ PhoneshopBot.message(async ({ message, say }) => {
 		const hourResponse = getResponse('hour');
 		await say(hourResponse);
 	}
-	else if (checkForTings(message.text)) {
-		const tingsResponse = getResponse('tings');
-		await say(tingsResponse);
-	}
 	else if (checkForBalls(message.text)) {
 		const ballsResponse = getResponse('balls');
 		await say(ballsResponse);
+	}
+	else if (checkForInAndOf(message.text)) {
+		const inAndOfResponse = getResponse('inAndOf');
+		await say(inAndOfResponse);
+	}
+	else if (checkForTings(message.text)) {
+		const tingsResponse = getResponse('tings');
+		await say(tingsResponse);
 	}
 });
 
