@@ -12,7 +12,7 @@ const tingsResponse = [
   'Cos this shit be paaaaaatent',
   'We don’t run on the high street. We run the high street.',
   'If man say him a ting, then him a ting',
-  'Mans operating on less money than Kerry Katona right now',
+  'Man’s operating on less money than Kerry Katona right now',
   'Senseless waste',
   'Grease up ma dry foot with da caw caw butta',
   'French Connecky Becky',
@@ -43,6 +43,7 @@ const tingsResponse = [
   'If the girl has to wear a polo shirt to work, no matter how fit she is, I can’t move to that.',
   'WHAT? I’m a complex man.',
   'NEVER point your fist at a black man, I’m ashamed of you!',
+  'Do the moosic.',
 ];
 
 const owlResponse = [
