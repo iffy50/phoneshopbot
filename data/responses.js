@@ -25,12 +25,38 @@ const tingsResponse = [
   'Expect the unexpected',
   'Keep it on the keep it on the keep it on the looooowwwwww',
   'Mi wan tya-bal, fer tree.',
-  'Chicken and tits fer 3 quid!'
+  'Chicken and tits fer 3 quid!',
   'When you buy a 30 grand car for 3 grand there’s gonna be trouble',
+];
+
+const owlResponse = [
+  'A owl?',
+  'A owl!',
+  'A OWL??',
+  'A OWL!!',
+];
+
+const hourResponse = [
+  'A hour?',
+  'A hour!',
+  'A HOUR??',
+  'A HOUR!!',
+];
+
+const ballsResponse = [
+  'RAZZ PRINCE AIN’T GOT NO BALLS LEFT!',
+];
+
+const inAndOfResponse = [
+  'In and of itself?',
 ];
 
 const responses = {
   tingsResponse,
+  owlResponse,
+  hourResponse,
+  ballsResponse,
+  inAndOfResponse,
 };
 
 function buildResponses() {
@@ -39,6 +65,22 @@ function buildResponses() {
   allResponses.tings = [];
   responses.tingsResponse.forEach((tingsResp) => {
     allResponses.tings.push(tingsResp);
+  });
+  allResponses.owl = [];
+  responses.owlResponse.forEach((owlResp) => {
+    allResponses.owl.push(owlResp);
+  });
+  allResponses.hour = [];
+  responses.hourResponse.forEach((hourResp) => {
+    allResponses.hour.push(hourResp);
+  });
+  allResponses.balls = [];
+  responses.ballsResponse.forEach((ballsResp) => {
+    allResponses.balls.push(ballsResp);
+  });
+  allResponses.inAndOf = [];
+  responses.inAndOfResponse.forEach((inAndOfResp) => {
+    allResponses.inAndOf.push(inAndOfResp);
   });
 
   // console.dir(allResponses);

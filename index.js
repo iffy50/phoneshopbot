@@ -9,11 +9,43 @@ const PhoneshopBot = new App({
 	socketMode: true,
 });
 
-const IRONY_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|sutton|croydon|owl|hour|wagamamas)/ig;
+const TINGS_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|janine|christopher|new man|newms|sutton|croydon|wagamamas)/ig;
+const OWL_REGEXP = /owl/ig;
+const HOUR_REGEXP = /hour/ig;
+const BALLS_REGEXP = /(balls|bollocks|gonads|testicles)/ig;
+const INANDOF_REGEXP = /in and of itself/ig;
 
-const checkForIrony = (text) => {
+const checkForOwl = (text) => {
 	if (text) {
-		return IRONY_REGEXP.test(text);
+		return OWL_REGEXP.test(text);
+	}
+	return false;
+};
+
+const checkForHour = (text) => {
+	if (text) {
+		return HOUR_REGEXP.test(text);
+	}
+	return false;
+};
+
+const checkForTings = (text) => {
+	if (text) {
+		return TINGS_REGEXP.test(text);
+	}
+	return false;
+};
+
+const checkForBalls = (text) => {
+	if (text) {
+		return BALLS_REGEXP.test(text);
+	}
+	return false;
+};
+
+const checkForInAndOf = (text) => {
+	if (text) {
+		return INANDOF_REGEXP.test(text);
 	}
 	return false;
 };
@@ -25,8 +57,23 @@ const getResponse = (type) => {
 };
 
 PhoneshopBot.message(async ({ message, say }) => {
-	if (checkForIrony(message.text)) {
-		// console.log('found IRONY');
+	if (checkForOwl(message.text)) {
+		const owlResponse = getResponse('owl');
+		await say(owlResponse);
+	}
+	else if (checkForHour(message.text)) {
+		const hourResponse = getResponse('hour');
+		await say(hourResponse);
+	}
+	else if (checkForBalls(message.text)) {
+		const ballsResponse = getResponse('balls');
+		await say(ballsResponse);
+	}
+	else if (checkForInAndOf(message.text)) {
+		const inAndOfResponse = getResponse('inAndOf');
+		await say(inAndOfResponse);
+	}
+	else if (checkForTings(message.text)) {
 		const tingsResponse = getResponse('tings');
 		await say(tingsResponse);
 	}
@@ -35,4 +82,4 @@ PhoneshopBot.message(async ({ message, say }) => {
 
 
 console.log('Starting PhoneshopBot...');
-PhoneshopBot.start(3001);
+PhoneshopBot.start(3002);
