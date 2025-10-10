@@ -1,5 +1,5 @@
 const tingsResponse = [
-  'Manaman’s a wagamama man every day famalam.',
+  'Yes, blud. Manaman’s a wagamama man every day.',
   'A owl!',
   'A hour!',
   'Do you like the films of Jude Law?',
@@ -9,7 +9,7 @@ const tingsResponse = [
   'Nose bone up in your brain and shit',
   'Welcome to Club Cheddar',
   'Gentlemens! Welcome to the Elite Selling Crew!',
-  'Cos this shit be patent',
+  'Cos this shit be paaaaaatent',
   'We don’t run on the high street. We run the high street.',
   'If man say him a ting, then him a ting',
   'Mans operating on less money than Kerry Katona right now',
@@ -27,6 +27,19 @@ const tingsResponse = [
   'Mi wan tya-bal, fer tree.',
   'Chicken and tits fer 3 quid!',
   'When you buy a 30 grand car for 3 grand there’s gonna be trouble',
+  'I once saw a dog knock over a whole jug of apple tango with his erection.\nI’ve not genuinely enjoyed a picnic since.',
+  'That’s why they call man Lance, innit',
+  'Hold tight for the rewind no hats no trainers!',
+  'Oh my days! Is that sandwiches?',
+  'Bruv, Man’s on a value ting here, yeah. I’m tasting the difference in reverse.',
+  'What? You ain’t getting your tings?',
+  'Anybody made a joke about being a new man yet? Na? I’ll take a slice of that action.',
+  'Mmmm ...malty',
+  'Is she high street?',
+  'He’s so jealous, he once blinded a man outside QFC with a side of barbeque beans.',
+  'Is that Ross Kemp weeing on people in a skip?\nHe only wets on the bad gangs, Christoper.',
+  'Yeah. I’m smashing that all over the fucking shop. As well as smashing others all over other shops all the fucking time.',
+  'What? Black man Graham?',
 ];
 
 const owlResponse = [
