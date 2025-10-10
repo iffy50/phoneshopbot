@@ -30,16 +30,19 @@ const tingsResponse = [
   'I once saw a dog knock over a whole jug of apple tango with his erection.\nI’ve not genuinely enjoyed a picnic since.',
   'That’s why they call man Lance, innit',
   'Hold tight for the rewind no hats no trainers!',
-  'Oh my days! Is that sandwiches?',
+  'OH my DAYS! Is that sangwidges?',
   'Bruv, Man’s on a value ting here, yeah. I’m tasting the difference in reverse.',
   'What? You ain’t getting your tings?',
   'Anybody made a joke about being a new man yet? Na? I’ll take a slice of that action.',
   'Mmmm ...malty',
   'Is she high street?',
   'He’s so jealous, he once blinded a man outside QFC with a side of barbeque beans.',
-  'Is that Ross Kemp weeing on people in a skip?\nHe only wets on the bad gangs, Christoper.',
+  'Is that Ross Kemp weeing on people in a skip?\nHe only wets on the bad gangs, Christopher.',
   'Yeah. I’m smashing that all over the fucking shop. As well as smashing others all over other shops all the fucking time.',
   'What? Black man Graham?',
+  'If the girl has to wear a polo shirt to work, no matter how fit she is, I can’t move to that.',
+  'WHAT? I’m a complex man.',
+  'NEVER point your fist at a black man, I’m ashamed of you!',
 ];
 
 const owlResponse = [
