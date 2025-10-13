@@ -62,7 +62,7 @@ const tingsResponse = [
   'It’s like living with a dirty Cato.',
   'Fuck off Sandra.',
   'You been on the Haribo, innit? You got Haribosis, innit?',
-  'I’ve got a head full of dreams... anna head fulla holes, Lance.',
+  'I’ve got a head full of dreams... anna arm fulla holes, Lance.',
   'What you sayin’ now, rudeboy? My yoot’s gone mute.',
   'Free balloon and goody bag? Yes please. Free glass of wine and shake hands with over-sized mascot? Yes please. Free after hours tour of the stock room and complimentary finger buffet? Yes. PLEASE.',
   'I... am your dad.\nI thought you said Lance was my dad?\n...\nI’m your *real* dad.',
