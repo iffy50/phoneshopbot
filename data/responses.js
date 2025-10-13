@@ -40,6 +40,17 @@ const tingsResponse = [
   'Is that Ross Kemp weeing on people in a skip?\nHe only wets on the bad gangs, Christoper.',
   'Yeah. I’m smashing that all over the fucking shop. As well as smashing others all over other shops all the fucking time.',
   'What? Black man Graham?',
+  'Dont run, he’ll outpace you. Sit down!\nDon’t sit down he’ll view it a sign of weakness.',
+  'Our greatest fear is that we are powerful beyond measure. Who said that?',
+  'When you’ve got the fire of the entreprener in your belly, the question is what is it you’re not going to da? Yeah?',
+  'So you told her to keep her shoes on? Nice!\nYeah, I don’t wanna see her dry foot, innit?',
+  'On, it wasn’t empty, yeah. It was full. Full of gang\nWeed?\nNo, Jerwayne. Gang.',
+  'Have you boys heard of the skunk?',
+  'I been baaakin’',
+  'What baakin a barm cake, like a big bloody bugger?',
+  'Muffins. Skunky muffins. Skuffins.',
+  'It got et.\nIt got et?\nIt got et.',
+  'Bruv, shut you mout. When us mans were youts, yeah? Man’d blaze a quartz a day, standard.',
 ];
 
 const owlResponse = [
