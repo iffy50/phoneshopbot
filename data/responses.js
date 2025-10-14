@@ -40,6 +40,8 @@ const tingsResponse = [
   'Is that Ross Kemp weeing on people in a skip?\nHe only wets on the bad gangs, Christopher.',
   'Yeah. I’m smashing that all over the fucking shop. As well as smashing others all over other shops all the fucking time.',
   'What? Black man Graham?',
+  'When is there ever a black man called Graham?',
+  'We roll out this kind of jester shit, like all day long son, you’ll get used to it.',
   'Don’t run, he’ll outpace you. Sit down!\nDon’t sit down he’ll view it a sign of weakness.',
   'Our greatest fear is that we are powerful beyond measure. Who said that?',
   'When you’ve got the fire of the entrepreneur in your belly, the question is what is it you’re not going to da? Yeah?',
@@ -56,6 +58,17 @@ const tingsResponse = [
   'NEVER point your fist at a black man, I’m ashamed of you!',
   'Do the moosic.',
   'We went ice skating once and we had to leave after ten minutes because you had a premonition someone was going to get stabbed during the under-17s free-skate session.',
+  'Have a nice time enjoying the rest of your day today please sir. Safe.',
+  'It’s like living with a dirty Cato.',
+  'Fuck off Sandra.',
+  'You been on the Haribo, innit? You got Haribosis, innit?',
+  'I’ve got a head full of dreams... anna arm fulla holes, Lance.',
+  'What you sayin’ now, rudeboy? My yoot’s gone mute.',
+  'Free balloon and goody bag? Yes please. Free glass of wine and shake hands with over-sized mascot? Yes please. Free after hours tour of the stock room and complimentary finger buffet? Yes. PLEASE.',
+  'I... am your dad.\nI thought you said Lance was my dad?\n...\nI’m your *real* dad.',
+  'That bredda better not step to me again today, bruv, trust me I’ll go RAGGO.',
+
+  'https://media.tenor.com/_d0P3yFI1XAAAAAM/expect-the-unexpected-unexpected.gif',
 ];
 
 const owlResponse = [
