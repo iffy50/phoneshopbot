@@ -81,7 +81,7 @@ PhoneshopBot.message(async ({ message, say }) => {
 		const inAndOfResponse = getResponse('inAndOf');
 		await say(inAndOfResponse);
 	}
-  else if (checkForExpect(message.text)) {
+	else if (checkForExpect(message.text)) {
 		const expectResponse = getResponse('expect');
 		await say(expectResponse);
 	}
