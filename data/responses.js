@@ -22,7 +22,6 @@ const tingsResponse = [
   'Apple don’t grapple the Mapple rudeboy',
   'A fire, a fight or a pregnancy before 10.00pm or your money back.',
   'Anyone for a White Malcolm?',
-  'Expect the unexpected',
   'Keep it on the keep it on the keep it on the looooowwwwww',
   'Mi wan tya-bal, fer tree.',
   'Chicken and tits fer 3 quid!',
@@ -34,7 +33,7 @@ const tingsResponse = [
   'Bruv, Man’s on a value ting here, yeah. I’m tasting the difference in reverse.',
   'What? You ain’t getting your tings?',
   'Anybody made a joke about being a new man yet? Na? I’ll take a slice of that action.',
-  'Mmmm ...malty',
+  'Mmmm... malty',
   'Is she high street?',
   'He’s so jealous, he once blinded a man outside QFC with a side of barbeque beans.',
   'Is that Ross Kemp weeing on people in a skip?\nHe only wets on the bad gangs, Christopher.',
@@ -68,8 +67,8 @@ const tingsResponse = [
   'I... am your dad.\nI thought you said Lance was my dad?\n...\nI’m your *real* dad.',
   'That bredda better not step to me again today, bruv, trust me I’ll go RAGGO.',
   'Ooh, cava...\nYeah, it’s French for champagne.',
-  'YOU WANKER!\nShe didn’t mean that\nCUT PRICE CUNT!\nShe did mean that",
-  'Pollo con pesto for the lady… spicy sausage penne for DA MAN',
+  'YOU WANKER!\nShe didn’t mean that\nCUT PRICE CUNT!\nShe did mean that',
+  'Pollo con pesto for the lady... spicy sausage penne for DA MAN',
   'Man a waste man.',
   'What, a shit and run?',
 ];
@@ -89,7 +88,9 @@ const hourResponse = [
 ];
 
 const ballsResponse = [
-  'RAZZ PRINCE AIN’T GOT NO BALLS LEFT!',
+  'I BEEN SHOT IN MY BAWS',
+  'ONE OF MY BAWS HAS COME OFF',
+  'RAZZ PRINCE AIN’T GOT NO BAWS LEFT!',
 ];
 
 const inAndOfResponse = [
@@ -98,6 +99,7 @@ const inAndOfResponse = [
 
 const expectResponse = [
   'https://media.tenor.com/_d0P3yFI1XAAAAAM/expect-the-unexpected-unexpected.gif',
+  'Expect the unexpected',
 ];
 
 const responses = {
