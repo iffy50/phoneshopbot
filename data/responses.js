@@ -67,8 +67,11 @@ const tingsResponse = [
   'Free balloon and goody bag? Yes please. Free glass of wine and shake hands with over-sized mascot? Yes please. Free after hours tour of the stock room and complimentary finger buffet? Yes. PLEASE.',
   'I... am your dad.\nI thought you said Lance was my dad?\n...\nI’m your *real* dad.',
   'That bredda better not step to me again today, bruv, trust me I’ll go RAGGO.',
-
-  'https://media.tenor.com/_d0P3yFI1XAAAAAM/expect-the-unexpected-unexpected.gif',
+  'Ooh, cava...\nYeah, it’s French for champagne.',
+  'YOU WANKER!\nShe didn’t mean that\nCUT PRICE CUNT!\nShe did mean that",
+  'Pollo con pesto for the lady… spicy sausage penne for DA MAN',
+  'Man a waste man.',
+  'What, a shit and run?',
 ];
 
 const owlResponse = [
@@ -93,12 +96,17 @@ const inAndOfResponse = [
   'In and of itself?',
 ];
 
+const expectResponse = [
+  'https://media.tenor.com/_d0P3yFI1XAAAAAM/expect-the-unexpected-unexpected.gif',
+];
+
 const responses = {
   tingsResponse,
   owlResponse,
   hourResponse,
   ballsResponse,
   inAndOfResponse,
+  expectResponse,
 };
 
 function buildResponses() {
@@ -124,6 +132,11 @@ function buildResponses() {
   responses.inAndOfResponse.forEach((inAndOfResp) => {
     allResponses.inAndOf.push(inAndOfResp);
   });
+  allResponses.expect = [];
+  responses.expectResponse.forEach((expectResp) => {
+    allResponses.expect.push(expectResp);
+  });
+
 
   // console.dir(allResponses);
   return allResponses;
