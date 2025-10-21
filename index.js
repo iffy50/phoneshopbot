@@ -9,11 +9,12 @@ const PhoneshopBot = new App({
 	socketMode: true,
 });
 
-const TINGS_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|janine|christopher|new man|newms|sutton|croydon|wagamamas|tings|ting|expect|jude|bruv)/ig;
+const TINGS_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|janine|christopher|new man|newms|sutton|croydon|wagamamas|tings|ting|jude|law|bruv)/ig;
 const OWL_REGEXP = /owl/ig;
 const HOUR_REGEXP = /hour/ig;
-const BALLS_REGEXP = /(balls|bollocks|gonads|testicles)/ig;
+const BALLS_REGEXP = /(baws|balls|bollocks|gonads|testicles)/ig;
 const INANDOF_REGEXP = /in and of itself/ig;
+const EXPECT_REGEXP = /expect/ig;
 
 const checkForOwl = (text) => {
 	if (text) {
@@ -50,6 +51,13 @@ const checkForInAndOf = (text) => {
 	return false;
 };
 
+const checkForExpect = (text) => {
+	if (text) {
+		return EXPECT_REGEXP.test(text);
+	}
+	return false;
+};
+
 const getResponse = (type) => {
 	const responsesOfType = responses()[type];
 	const pluckResponse = Math.floor(Math.random() * responsesOfType.length);
@@ -72,6 +80,10 @@ PhoneshopBot.message(async ({ message, say }) => {
 	else if (checkForInAndOf(message.text)) {
 		const inAndOfResponse = getResponse('inAndOf');
 		await say(inAndOfResponse);
+	}
+	else if (checkForExpect(message.text)) {
+		const expectResponse = getResponse('expect');
+		await say(expectResponse);
 	}
 	else if (checkForTings(message.text)) {
 		const tingsResponse = getResponse('tings');
