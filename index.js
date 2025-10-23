@@ -15,6 +15,14 @@ const HOUR_REGEXP = /hour/ig;
 const BALLS_REGEXP = /(baws|balls|bollocks|gonads|testicles)/ig;
 const INANDOF_REGEXP = /in and of itself/ig;
 const EXPECT_REGEXP = /expect/ig;
+const ROLLCALL_REGEXP = /(rollcall|roll call)/ig;
+
+const checkForRollcall = (text) => {
+	if (text) {
+		return ROLLCALL_REGEXP.test(text);
+	}
+	return false;
+};
 
 const checkForOwl = (text) => {
 	if (text) {
@@ -65,7 +73,11 @@ const getResponse = (type) => {
 };
 
 PhoneshopBot.message(async ({ message, say }) => {
-	if (checkForOwl(message.text)) {
+	if (checkForRollcall(message.text)) {
+		const rollcallResponse = getResponse('rollcall');
+		await say(rollcallResponse);
+	}
+	else if (checkForOwl(message.text)) {
 		const owlResponse = getResponse('owl');
 		await say(owlResponse);
 	}

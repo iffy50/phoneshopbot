@@ -71,6 +71,7 @@ const tingsResponse = [
 	'Pollo con pesto for the lady... spicy sausage penne for DA MAN',
 	'Man a waste man.',
 	'What, a shit and run?',
+	'Listen, coupla matters of protocol we better go through with you before we let you represent, innit',
 ];
 
 const owlResponse = [
@@ -102,6 +103,10 @@ const expectResponse = [
 	'Expect the unexpected',
 ];
 
+const rollcallResponse = [
+	'You’re probably thinking "Why has Janine called this informal mini-pre-work-conference?"',
+];
+
 const responses = {
 	tingsResponse,
 	owlResponse,
@@ -109,6 +114,7 @@ const responses = {
 	ballsResponse,
 	inAndOfResponse,
 	expectResponse,
+	rollcallResponse,
 };
 
 function buildResponses() {
@@ -138,7 +144,10 @@ function buildResponses() {
 	responses.expectResponse.forEach((expectResp) => {
 		allResponses.expect.push(expectResp);
 	});
-
+	allResponses.rollcall = [];
+	responses.rollcallResponse.forEach((rollcallResp) => {
+		allResponses.rollcall.push(rollcallResp);
+	});
 
 	// console.dir(allResponses);
 	return allResponses;
