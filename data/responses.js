@@ -71,19 +71,33 @@ const tingsResponse = [
 	'Pollo con pesto for the lady... spicy sausage penne for DA MAN',
 	'Man a waste man.',
 	'What, a shit and run?',
-        'They don’t exist. And they don’t earn 97k a year. And they don’t have a 19% discount at Homebase, Ripley’s Believe It Or Not, The Monkey and Ape Rescue Centre Dorset, and all branches of Claire’s, formerly known as Claire’s Accessories.',
-        'What’s man’s hair sayin’, innit?.',
-        'Bruv, that’s double decker satire right here, bruv.',
-        'Bruv, when a girl tells you her dad’s a little bit different, and not to take everything he says too seriously, you KNOW my man’s a racist.',
-        'I mean, I’m not being weird mate, but can I touch your hair?',
-        'I ain’t being racial mate. I’m just a plain speaking, simple minded, curious racist',
-        'I haven’t been this happy since I say Maxi Priest guest with UB40 in 2007. Magical night. Shelly was at home with thrush',
-        'I come alive of a night. About seven, quater to eight. Whatever.',
-        'How long’s man been gassed on a cabin crew ting?',
-        'I’ve been dreaming about that filth for time, cuz',
-        'You could tell me I look nice. You don’t have to mean it.',
-        'There are one, two, tree o’we.',
-        'My brother once masturbated onto my stick insects ’cos I wouldn’t let him watch Thundercats.',
+  'They don’t exist. And they don’t earn 97k a year. And they don’t have a 19% discount at Homebase, Ripley’s Believe It Or Not, The Monkey and Ape Rescue Centre Dorset, and all branches of Claire’s, formerly known as Claire’s Accessories.',
+  'What’s man’s hair sayin’, innit?.',
+  'Bruv, that’s double decker satire right here, bruv.',
+  'Bruv, when a girl tells you her dad’s a little bit different, and not to take everything he says too seriously, you KNOW my man’s a racist.',
+  'I mean, I’m not being weird mate, but can I touch your hair?',
+  'I ain’t being racial mate. I’m just a plain speaking, simple minded, curious racist.',
+  'I haven’t been this happy since I say Maxi Priest guest with UB40 in 2007. Magical night. Shelly was at home with thrush.',
+  'I come alive of a night. About seven, quater to eight. Whatever.',
+  'How long’s man been gassed on a cabin crew ting?',
+  'I’ve been dreaming about that filth for time, cuz',
+  'You could tell me I look nice. You don’t have to mean it.',
+  'There are one, two, tree o’we.',
+  'My brother once masturbated onto my stick insects ’cos I wouldn’t let him watch Thundercats.',
+	'Listen, coupla matters of protocol we better go through with you before we let you represent, innit',
+	'Two words: Ess. Corting.',
+	'I used to make quite a good living from it before I lost my arsehole.',
+	'This ain’t no fuckin’ accident. We’re fuckin’ beautiful and blessed!',
+	'Tell me... Have you read the books of Patricia Cornwell?',
+	'I knew it, my hair’s becomin’ a myth!',
+	'I done a nob, innit.',
+	'What you lookin’ at, granddad-face?',
+	'Why’s your old face lookin’ at my young self? Spin round, Heskey-man, go to your boy Rooney innit.',
+	'Twenty-year-old can’t comprehend this, she ain’t got language for it bruv!',
+	'Ash! Contain yourself!',
+	'Why won’t you let man stay over your yard, innit?',
+	'What’s wrong with white people? Why is there a dog in the bedroom?',
+	'I’m not proud to say I once got turned on after seeing two dogs locked together on the central reservation of a German motorway. I had to pull off on the hard shoulder.',
 ];
 
 const owlResponse = [
@@ -116,6 +130,10 @@ const expectResponse = [
 	'Expect the unexpected',
 ];
 
+const rollcallResponse = [
+	'You’re probably thinking "Why has Janine called this informal mini-pre-work-conference?"',
+];
+
 const responses = {
 	tingsResponse,
 	owlResponse,
@@ -123,6 +141,7 @@ const responses = {
 	ballsResponse,
 	inAndOfResponse,
 	expectResponse,
+	rollcallResponse,
 };
 
 function buildResponses() {
@@ -152,7 +171,10 @@ function buildResponses() {
 	responses.expectResponse.forEach((expectResp) => {
 		allResponses.expect.push(expectResp);
 	});
-
+	allResponses.rollcall = [];
+	responses.rollcallResponse.forEach((rollcallResp) => {
+		allResponses.rollcall.push(rollcallResp);
+	});
 
 	// console.dir(allResponses);
 	return allResponses;
@@ -162,5 +184,6 @@ module.exports = function () {
 	const responses = buildResponses();
 	return responses;
 }
+
 
 
