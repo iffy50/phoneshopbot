@@ -72,6 +72,17 @@ const tingsResponse = [
 	'Man a waste man.',
 	'What, a shit and run?',
 	'Listen, coupla matters of protocol we better go through with you before we let you represent, innit',
+	'Two words: Ess. Corting.',
+	'I used to make quite a good living from it before I lost my arsehole.',
+	'This ain’t no fuckin’ accident. We’re fuckin’ beautiful and blessed!',
+	'Tell me... Have you read the books of Patricia Cornwell?',
+	'I knew it, my hair’s becomin’ a myth!',
+	'I done a nob, innit.',
+	'What you lookin’ at, granddad-face?',
+	'Why’s your old face lookin’ at my young self? Spin round, Heskey-man, go to your boy Rooney innit.',
+	'Twenty-year-old can’t comprehend this, she ain’t got language for it bruv!',
+	'Ash! Contain yourself!',
+	'Why won’t you let man stay over your yard, innit?',
 ];
 
 const owlResponse = [
@@ -157,5 +168,6 @@ module.exports = function () {
 	const responses = buildResponses();
 	return responses;
 }
+
 
 
