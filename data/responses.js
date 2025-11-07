@@ -71,6 +71,19 @@ const tingsResponse = [
 	'Pollo con pesto for the lady... spicy sausage penne for DA MAN',
 	'Man a waste man.',
 	'What, a shit and run?',
+        'They don’t exist. And they don’t earn 97k a year. And they don’t have a 19% discount at Homebase, Ripley’s Believe It Or Not, The Monkey and Ape Rescue Centre Dorset, and all branches of Claire’s, formerly known as Claire’s Accessories.',
+        'What’s man’s hair sayin’, innit?.',
+        'Bruv, that’s double decker satire right here, bruv.',
+        'Bruv, when a girl tells you her dad’s a little bit different, and not to take everything he says too seriously, you KNOW my man’s a racist.',
+        'I mean, I’m not being weird mate, but can I touch your hair?',
+        'I ain’t being racial mate. I’m just a plain speaking, simple minded, curious racist',
+        'I haven’t been this happy since I say Maxi Priest guest with UB40 in 2007. Magical night. Shelly was at home with thrush',
+        'I come alive of a night. About seven, quater to eight. Whatever.',
+        'How long’s man been gassed on a cabin crew ting?',
+        'I’ve been dreaming about that filth for time, cuz',
+        'You could tell me I look nice. You don’t have to mean it.',
+        'There are one, two, tree o’we.',
+        'My brother once masturbated onto my stick insects ’cos I wouldn’t let him watch Thundercats.',
 ];
 
 const owlResponse = [
@@ -95,6 +108,7 @@ const ballsResponse = [
 
 const inAndOfResponse = [
 	'In and of itself?',
+        'In and of itsFUCKINGself, bruv.',
 ];
 
 const expectResponse = [
