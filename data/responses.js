@@ -83,6 +83,8 @@ const tingsResponse = [
 	'Twenty-year-old can’t comprehend this, she ain’t got language for it bruv!',
 	'Ash! Contain yourself!',
 	'Why won’t you let man stay over your yard, innit?',
+	'What’s wrong with white people? Why is there a dog in the bedroom?',
+	'I’m not proud to say I once got turned on after seeing two dogs locked together on the central reservation of a German motorway. I had to pull off on the hard shoulder.',
 ];
 
 const owlResponse = [
