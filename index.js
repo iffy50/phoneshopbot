@@ -74,7 +74,7 @@ const getResponse = (type) => {
 
 PhoneshopBot.message(async ({ message, say }) => {
 	if (checkForRollcall(message.text)) {
-		const rollcallResponse = getResponse('rollcall');
+		const rollcallResponse = getResponse('tings');
 		await say(rollcallResponse);
 	}
 	else if (checkForOwl(message.text)) {

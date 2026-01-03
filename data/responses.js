@@ -98,6 +98,7 @@ const tingsResponse = [
 	'Why won’t you let man stay over your yard, innit?',
 	'What’s wrong with white people? Why is there a dog in the bedroom?',
 	'I’m not proud to say I once got turned on after seeing two dogs locked together on the central reservation of a German motorway. I had to pull off on the hard shoulder.',
+	'You’re probably thinking "Why has Janine called this informal mini-pre-work-conference?"',
 ];
 
 const owlResponse = [
@@ -130,10 +131,6 @@ const expectResponse = [
 	'Expect the unexpected',
 ];
 
-const rollcallResponse = [
-	'You’re probably thinking "Why has Janine called this informal mini-pre-work-conference?"',
-];
-
 const responses = {
 	tingsResponse,
 	owlResponse,
@@ -141,7 +138,6 @@ const responses = {
 	ballsResponse,
 	inAndOfResponse,
 	expectResponse,
-	rollcallResponse,
 };
 
 function buildResponses() {
@@ -170,10 +166,6 @@ function buildResponses() {
 	allResponses.expect = [];
 	responses.expectResponse.forEach((expectResp) => {
 		allResponses.expect.push(expectResp);
-	});
-	allResponses.rollcall = [];
-	responses.rollcallResponse.forEach((rollcallResp) => {
-		allResponses.rollcall.push(rollcallResp);
 	});
 
 	// console.dir(allResponses);
