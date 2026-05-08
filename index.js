@@ -9,13 +9,14 @@ const PhoneshopBot = new App({
 	socketMode: true,
 });
 
-const TINGS_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|janine|christopher|new man|newms|sutton|croydon|wagamamas|tings|ting|jude|law|bruv)/ig;
+const TINGS_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|janine|christopher|new man|newms|sutton|croydon|wagamamas|tings|ting|bruv)/ig;
 const OWL_REGEXP = /owl/ig;
 const HOUR_REGEXP = /hour/ig;
 const BALLS_REGEXP = /(baws|balls|bollocks|gonads|testicles)/ig;
 const INANDOF_REGEXP = /in and of itself/ig;
 const EXPECT_REGEXP = /expect/ig;
 const ROLLCALL_REGEXP = /(rollcall|roll call)/ig;
+const JUDELAW_REGEXP = /(jude|law)/ig;
 
 const checkForRollcall = (text) => {
 	if (text) {
@@ -34,6 +35,13 @@ const checkForOwl = (text) => {
 const checkForHour = (text) => {
 	if (text) {
 		return HOUR_REGEXP.test(text);
+	}
+	return false;
+};
+
+const checkForJudeLaw = (text) => {
+	if (text) {
+		return JUDELAW_REGEXP.test(text);
 	}
 	return false;
 };
@@ -84,6 +92,10 @@ PhoneshopBot.message(async ({ message, say }) => {
 	else if (checkForHour(message.text)) {
 		const hourResponse = getResponse('hour');
 		await say(hourResponse);
+	}
+	else if (checkForJudeLaw(message.text)) {
+		const judeLawResponse = getResponse('judeLaw');
+		await say(judeLawResponse);
 	}
 	else if (checkForBalls(message.text)) {
 		const ballsResponse = getResponse('balls');

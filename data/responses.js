@@ -2,7 +2,6 @@ const tingsResponse = [
 	'Yes, blud. Manaman’s a wagamama man every day.',
 	'A owl!',
 	'A hour!',
-	'Do you like the films of Jude Law?',
 	'You go tell Dr Dre dat, man will fuck you up innit!',
 	'Oh my giddy giddy gosh!',
 	'Fuck off Nan. Go on, do one',
@@ -88,7 +87,6 @@ const tingsResponse = [
 	'Two words: Ess. Corting.',
 	'I used to make quite a good living from it before I lost my arsehole.',
 	'This ain’t no fuckin’ accident. We’re fuckin’ beautiful and blessed!',
-	'Tell me... Have you read the books of Patricia Cornwell?',
 	'I knew it, my hair’s becomin’ a myth!',
 	'I done a nob, innit.',
 	'What you lookin’ at, granddad-face?',
@@ -99,6 +97,12 @@ const tingsResponse = [
 	'What’s wrong with white people? Why is there a dog in the bedroom?',
 	'I’m not proud to say I once got turned on after seeing two dogs locked together on the central reservation of a German motorway. I had to pull off on the hard shoulder.',
 	'You’re probably thinking "Why has Janine called this informal mini-pre-work-conference?"',
+	'From now on this fucking door stays open!',
+	'Shut up, college. P.H.Diiickhead.',
+	'Bruv, let me propose this to the house, that you NEVER TEST MAN ON CARTOON.',
+	'I’ll be taking the role of Diiiickhead in this production.',
+	'Facepaints are good for me. As a lion, I look strong.',
+	'Right. Little Britain, here’s a pound, fuck off to Greggs.',
 ];
 
 const owlResponse = [
@@ -123,12 +127,18 @@ const ballsResponse = [
 
 const inAndOfResponse = [
 	'In and of itself?',
-        'In and of itsFUCKINGself, bruv.',
+	'In and of itsFUCKINGself, bruv.',
 ];
 
 const expectResponse = [
 	'https://media.tenor.com/_d0P3yFI1XAAAAAM/expect-the-unexpected-unexpected.gif',
 	'Expect the unexpected',
+];
+
+const judeLawResponse = [
+	'Do you like the films of Jude Law?',
+	'NO man likes Jude Law!',
+	'Tell me... Have you read the books of Patricia Cornwell?',
 ];
 
 const responses = {
@@ -138,6 +148,7 @@ const responses = {
 	ballsResponse,
 	inAndOfResponse,
 	expectResponse,
+	judeLawResponse,
 };
 
 function buildResponses() {
@@ -166,6 +177,10 @@ function buildResponses() {
 	allResponses.expect = [];
 	responses.expectResponse.forEach((expectResp) => {
 		allResponses.expect.push(expectResp);
+	});
+	allResponses.judeLaw = [];
+	responses.judeLawResponse.forEach((judeLawResp) => {
+		allResponses.judeLaw.push(judeLawResp);
 	});
 
 	// console.dir(allResponses);
