@@ -9,7 +9,7 @@ const PhoneshopBot = new App({
 	socketMode: true,
 });
 
-const TINGS_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|janine|christopher|new man|newms|sutton|croydon|wagamamas|tings|ting|bruv)/ig;
+const TINGS_REGEXP = /(phone|iphone|mobile|handy|shop|contract|ashley|lance|jerwayne|janine|christopher|new man|newms|sutton|croydon|wagamamas|tings|ting|bruv|ganj|skunk)/ig;
 const OWL_REGEXP = /owl/ig;
 const HOUR_REGEXP = /hour/ig;
 const BALLS_REGEXP = /(baws|balls|bollocks|gonads|testicles)/ig;
